@@ -1,6 +1,6 @@
 {
   "name": "@deamtest/ens-namehash",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple module for generating ENS namehashes per spec https://github.com/ethereum/EIPs/issues/137",
   "main": "dist/esm/index.js",
   "module": "dist/esm/index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/deamtest/ens-namehash.git"
+    "url": "https://github.com/deamtestlib/ens-namehash.git"
   },
   "keywords": [
     "deamtest",
@@ -19,12 +19,12 @@
     "deamchain",
     "ENS"
   ],
-  "author": "leo pawel <leopawel65@gmail.com> (https://deamtest.com)",
+  "author": "leo pawel <galaxy85126@gmail.com> (https://deamtest.com)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/deamtest/ens-namehash/issues"
+    "url": "https://github.com/deamtestlib/ens-namehash/issues"
   },
-  "homepage": "https://github.com/deamtest/ens-namehash#readme",
+  "homepage": "https://github.com/deamtestlib/ens-namehash#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
