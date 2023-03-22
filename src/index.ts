@@ -1,7 +1,7 @@
 import {keccak_256} from 'js-sha3';
-import uts46 from 'idna-uts46-hx'
+import {toUnicode} from './uts46'
 
-export const hash = (inputName: string) => {
+const hash = (inputName: string) => {
 	let node = '0000000000000000000000000000000000000000000000000000000000000000';
 	const name = normalize(inputName);
 	if (name) {
@@ -13,6 +13,11 @@ export const hash = (inputName: string) => {
 	return '0x' + node;
 }
 
-export const normalize = (name: string) => name ? uts46.toUnicode(name, {useStd3ASCII: true}) : name;
+const keccak256 = (label: string) => '0x' + keccak_256(label);
 
-export default {hash, normalize};
+const normalize = (name: string) => name ? toUnicode(name, {useSTD3ASCIIRules: true}) : name;
+
+const reverseNode = (address: string) => (namehash.hash(address.slice(2).toLowerCase() + '.addr.reverse'))
+
+const namehash = {hash, normalize, keccak256, reverseNode};
+export default namehash;

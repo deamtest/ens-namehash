@@ -26,7 +26,13 @@ test('TLD eth', (t) => {
 	const output = namehash.hash(input)
 	t.equal(output, expected)
 })
-
+test('TLD neon', (t) => {
+	t.plan(1)
+	const input = 'neon'
+	const expected = '0x534e499aa07054e03937905209ceabfecf5290265f1fc04430cea90ba2847648'
+	const output = namehash.hash(input)
+	t.equal(output, expected)
+})
 test('foo.eth', (t) => {
 	t.plan(1)
 	const input = 'foo.eth'
@@ -66,4 +72,13 @@ test('normalize emoji domain', (t) => {
 	const expected = '🦚.eth'
 	const output = namehash.normalize(input)
 	t.equal(output, expected)
+})
+
+
+test('addr.reverse', (t) => {
+	t.plan(1)
+	const input = 'neon'
+	const output = namehash.hash(input)
+	console.log('addr.reverse', output);
+	t.equal(output, '')
 })

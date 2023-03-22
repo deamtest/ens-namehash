@@ -16,8 +16,7 @@ npm install @deamtest/ens-namehash -S
 
 ```javascript
 var namehash = require('@deamtest/ens-namehash');
-var hash = namehash.hash('foo.eth');
-// '0xde9b09fd7c5f901e23a3f19fecc54828e9c848539801e86591bd9801b019f84f'
+var hash = namehash.hash('leopawel.eth');
 
 // Also supports normalizing strings to ENS compatibility:
 var input = getUserInput();
@@ -28,7 +27,7 @@ var normalized = namehash.normalize(input);
 
 ```typescript
 import namehash from '@deamtest/ens-namehash';
-const hash = namehash.hash('foo.eth');
+const hash = namehash.hash('leopawel.eth');
 // '0xde9b09fd7c5f901e23a3f19fecc54828e9c848539801e86591bd9801b019f84f'
 
 // Also supports normalizing strings to ENS compatibility:
